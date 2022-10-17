@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+#mySidenav a {
+  position: absolute;
+  right: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 60px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#mySidenav a:hover {
+  right: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 150px;
+  background-color: #04AA6D;
+}
+
+#projects {
+  top: 280px;
+  background-color: #04AA6D;
+}
+
+#contact {
+  top: 410px;
+  background-color: #04AA6D
+}
+
+.site-info{
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+#pull-out {
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.icon-container > i {
+  position:relative;
+    top: calc(50% - 20px);
+
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" class ="site-info" id="about"> <span class="icon-container"><i class="fa fa-fw fa-home"></i></span> <p id="pull-out">About Us</p></a>
+  <a href="#" class ="site-info" id="blog"> <span class="icon-container"><i class="fa fa-fw fa-wrench"></i></span> <p id="pull-out">Our Blog</p> </a>
+  <a href="#" class ="site-info" id="projects"> <span class="icon-container"><i class="fa fa-fw fa-user"></i></span> <p id="pull-out">Projects</p>   </a>
+  <a href="#" class ="site-info" id="contact"> <span class="icon-container"><i class="fa fa-fw fa-envelope"></i></span> <p id="pull-out">Contact Us</p>  </a>
+</div>
+
+<div style="margin-left:80px;">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+   
+</body>
+</html> 
